@@ -1,5 +1,5 @@
-
 module.exports = function (context, req) {
+    context.log('API key is ' + req.query);
     context.res = {
 	status: 200,
 	headers: {
