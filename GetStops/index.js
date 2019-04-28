@@ -8,6 +8,8 @@ module.exports = function (context, req) {
 	body: {
 	    timeStamp: 'abc123',
 	    stops: [
+		{ stopCode: "GIOL", stopName: "Gardiol" },
+		{ stopCode: "ZIPLO", stopName: "ZIPLO" }
 		]
 	}
     };
