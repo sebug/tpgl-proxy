@@ -1,7 +1,7 @@
 const http = require('http');
 
 module.exports = function (context, req) {
-    context.log('API key is ' + req.query);
+    context.log('API key is ' + req.query.key);
 
     http.get('http://prod.ivtr-od.tpg.ch/v1/GetStops?key=' + req.query.key, (resp) => {
 	let data = '';
