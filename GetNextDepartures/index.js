@@ -3,8 +3,8 @@ const http = require('http');
 module.exports = function (context, req) {
     context.log('API key is ' + req.query.key);
 
-    // Introduce some errors by flipping a coin
-    let errorOut = Math.random() > 0.5;
+    // Introduce some errors, but not too many
+    let errorOut = Math.random() > 0.8;
     if (errorOut) {
 	context.res = {
 	    status: 500,
